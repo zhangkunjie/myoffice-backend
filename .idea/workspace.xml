@@ -10,7 +10,91 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b3254a9d-d08b-4282-ae27-f4151004379c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myoffice-backend.iml" afterPath="$PROJECT_DIR$/myoffice-backend.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/application.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/common/constant/Constant.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/common/interceptor/PaginationInterceptor$ReflectUtil.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/common/interceptor/PaginationInterceptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/common/utils/JsonCallBack.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/controller/ActivityController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/controller/CategoryController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/controller/PriorityController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/controller/ReportController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/dao/ActivityDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/dao/BaseDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/dao/CategoryDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/dao/PriorityDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/dao/ReportDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/model/ActivityModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/model/CategoryModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/model/PageModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/model/PriorityModel.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/model/Student.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/service/ActivityService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/service/CategoryService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/service/PriorityService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/service/ReportService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/service/serviceimpl/ActivityServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/service/serviceimpl/CategoryServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/service/serviceimpl/ProrityServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/com/myoffice/service/serviceimpl/ReportServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/database/myoffice.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/log4j.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/mapper/activityMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/mapper/categoryMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/mapper/priorityMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/mapper/reportMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/mybatis-config.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/rebel.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/spring-mvc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/classes/spring-mybatis.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/jsp/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/aspectjweaver-1.8.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/c3p0-0.9.2.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/commons-dbcp-1.2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/commons-fileupload-1.3.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/commons-io-2.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/commons-lang3-3.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/commons-pool-1.3.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/curator-client-2.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/curator-framework-2.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/curator-recipes-2.4.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/druid-1.1.9.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/dubbo-2.6.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/guava-14.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-core-2.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/jackson-databind-2.7.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/javassist-3.20.0-GA.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/jline-0.9.94.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/jsqlparser-1.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/log4j-1.2.17.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/mchange-commons-java-0.2.3.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-3.4.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/mybatis-spring-1.3.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/mysql-connector-java-5.1.47.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/netty-3.2.5.Final.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/pagehelper-5.1.4.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.22.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/slf4j-log4j12-1.6.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aop-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/spring-aspects-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/spring-beans-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/spring-context-support-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/spring-core-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/spring-expression-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/spring-oxm-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/spring-test-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/spring-tx-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/spring-web-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.3.3.RELEASE.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/lib/zookeeper-3.4.5.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -221,10 +305,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="-1036" />
-    <option name="width" value="1730" />
-    <option name="height" value="1032" />
+    <option name="x" value="278" />
+    <option name="y" value="-1023" />
+    <option name="width" value="1302" />
+    <option name="height" value="1015" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -364,7 +448,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="com.zeroturnaround.javarebel.idea.plugin.settings.startup.StartupConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -1036,7 +1120,7 @@
       <workItem from="1548643721821" duration="244000" />
       <workItem from="1548726702666" duration="5365000" />
       <workItem from="1548816905831" duration="8570000" />
-      <workItem from="1548859411024" duration="149000" />
+      <workItem from="1548859411024" duration="507000" />
     </task>
     <task id="LOCAL-00001" summary="添加数据库文件models">
       <created>1547116218463</created>
@@ -1056,7 +1140,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11222000" />
+    <option name="totallyTimeSpent" value="11580000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -1068,14 +1152,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-1036" width="1730" height="1032" extended-state="0" />
+    <frame x="278" y="-1023" width="1302" height="1015" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955974" sideWeight="0.50240093" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3308176" sideWeight="0.48739496" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955974" sideWeight="0.50240093" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26703164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36101973" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1090,11 +1174,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955974" sideWeight="0.49759904" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7056604" sideWeight="0.49759904" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40503144" sideWeight="0.49759904" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7056555" sideWeight="0.49759904" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4048843" sideWeight="0.49759904" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3308176" sideWeight="0.49759904" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32664233" sideWeight="0.49195403" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5359897" sideWeight="0.49759904" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44161186" sideWeight="0.49195403" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955974" sideWeight="0.49759904" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23976293" sideWeight="0.508046" order="2" side_tool="true" content_ui="tabs" />

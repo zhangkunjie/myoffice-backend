@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="myoffice-backend:war exploded">
-    <output-path>$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT</output-path>
+  <artifact type="exploded-war" build-on-make="true" name="myoffice-backend:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/myoffice_backend_war_exploded</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
@@ -49,12 +49,9 @@
           <element id="library" level="project" name="Maven: jline:jline:0.9.94" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:14.0.1" />
           <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.9" />
-          <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper:5.1.4" />
-          <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:1.0" />
+          <element id="library" level="project" name="Maven: com.github.pagehelper:pagehelper:5.1.5" />
+          <element id="library" level="project" name="Maven: com.github.jsqlparser:jsqlparser:1.2" />
         </element>
-      </element>
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/target/myoffice-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="myoffice-backend/web/Web" />
     </root>

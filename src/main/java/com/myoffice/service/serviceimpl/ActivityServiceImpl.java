@@ -4,7 +4,6 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.myoffice.dao.ActivityDao;
 import com.myoffice.model.ActivityModel;
-import com.myoffice.model.Student;
 import com.myoffice.service.ActivityService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;

@@ -107,36 +107,36 @@
             id=#{id}
         </where>
     </delete>
-    <update id="update" parameterType="Student">
-        UPDATE activity
-        <set>
-            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">
-                name=#{name},
-            </if>
-            <if test="category!=null">
-                category=#{category},
-            </if>
-            <if test="priority!=null">
-                priority=#{priority},
-            </if>
-            <if test="createDay!=null">
-                create_day=#{createDay},
-            </if>
-            <if test="startTime!=null">
-                start_time=#{startTime},
-            </if>
-            <if test="endTime!=null">
-                end_time=#{endTime},
-            </if>
-            <if test="implementRate!=null">
-                implement_rate=#{implementRate},
-            </if>
-            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(remark)">
-                remark=#{remark}
-            </if>
-        </set>
-        WHERE id=#{id}
-    </update>
+    <!--<update id="update" parameterType="Student">-->
+        <!--UPDATE activity-->
+        <!--<set>-->
+            <!--<if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">-->
+                <!--name=#{name},-->
+            <!--</if>-->
+            <!--<if test="category!=null">-->
+                <!--category=#{category},-->
+            <!--</if>-->
+            <!--<if test="priority!=null">-->
+                <!--priority=#{priority},-->
+            <!--</if>-->
+            <!--<if test="createDay!=null">-->
+                <!--create_day=#{createDay},-->
+            <!--</if>-->
+            <!--<if test="startTime!=null">-->
+                <!--start_time=#{startTime},-->
+            <!--</if>-->
+            <!--<if test="endTime!=null">-->
+                <!--end_time=#{endTime},-->
+            <!--</if>-->
+            <!--<if test="implementRate!=null">-->
+                <!--implement_rate=#{implementRate},-->
+            <!--</if>-->
+            <!--<if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(remark)">-->
+                <!--remark=#{remark}-->
+            <!--</if>-->
+        <!--</set>-->
+        <!--WHERE id=#{id}-->
+    <!--</update>-->
     <!--
     <select id="getById" parameterType="Student" resultType="Student">
         SELECT

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.myoffice.dao.BookDao">
+    <!--配置一个resultMap 指定返回的类型 -->
+    <resultMap id="bookModelRM" type="BookModel">
+        <id column="id" property="id"/>
+        <result column="name" property="name"/>
+        <result column="author" property="author"/>
+        <result column="category" property="category"/>
+        <result column="page" property="page"/>
+        <result column="create_day" property="createDay"/>
+        <result column="status" property="status"/>
+        <result column="end_time" property="endTime"/>
+        <result column="note" property="note"/>
+    </resultMap>
+    <insert id="insert" parameterType="BookModel" useGeneratedKeys="true" keyProperty="id">
+         INSERT INTO book
+         <trim prefix="(" suffix=")" suffixOverrides=",">
+             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">
+                 name,
+             </if>
+             <if test="author!=null">
+                 author,
+             </if>
+             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(category)">
+                 category,
+             </if>
+             <if test="page!=null">
+                 page,
+             </if>
+             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(staus)">
+                 status,
+             </if>
+             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(note)">
+                 note,
+             </if>
+         </trim>
+         VALUES
+         <trim prefix="(" suffix=")" suffixOverrides=",">
+             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">
+                 #{name},
+             </if>
+             <if test="author!=null">
+                 #{author},
+             </if>
+             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(category)">
+                 #{category},
+             </if>
+             <if test="page!=null">
+                 #{page},
+             </if>
+             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(staus)">
+                 #{status},
+             </if>
+             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(note)">
+                 #{note},
+             </if>
+         </trim>
+     </insert>
+    <delete id="delete" parameterType="BookModel">
+        DELETE FROM  book
+        <where>
+            id=#{id}
+        </where>
+    </delete>
+    <update id="update" parameterType="BookModel">
+    UPDATE book
+    <set>
+    <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">
+    name=#{name},
+    </if>
+    <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(author)">
+    author=#{author},
+    </if>
+    <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(category)">
+    category=#{catetory},
+    </if>
+   <if test="page!=null">
+    page=#{page},
+    </if>
+        <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(status)">
+            status=#{status},
+        </if>
+    <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(note)">
+    note=#{note}
+    </if>
+    </set>
+    WHERE id=#{id}
+    </update>
+    <select id="getById" parameterType="BookModel" resultType="BookModel">
+        SELECT
+        b.*
+        FROM
+        book b
+        <where>
+            b.id=#{id}
+        </where>
+    </select>
+
+    <!--<select id="findAll" parameterType="Student" resultMap="studentModelRM">-->
+        <!--select-->
+        <!--s.*-->
+        <!--from-->
+        <!--student s-->
+        <!--<where>-->
+            <!--<if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">-->
+                <!--AND m.`name` like CONCAT('%',"\\" #{name},'%' )-->
+            <!--</if>-->
+            <!--<if test="gender != null">-->
+                <!--AND s.`gender`=#{gender}-->
+            <!--</if>-->
+            <!--<if test="age != null">-->
+                <!--AND s.`age`=#{age}-->
+            <!--</if>-->
+            <!--<if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(address)">-->
+                <!--AND m.`address` like CONCAT('%',"\\" #{address},'%' )-->
+            <!--</if>-->
+        <!--</where>-->
+    <!--</select>-->
+    <!--&lt;!&ndash;id 固定的 findPaging parameterType 固定的 pageModel params.entity固定写法&ndash;&gt;-->
+    <select id="findPage" parameterType="bookModel" resultMap="bookModelRM">
+        select
+        b.*
+        from
+        book b
+        <where>
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">
+                AND b.`name` like CONCAT('%',"\\" #{name},'%' )
+            </if>
+            <if test="category != null ">
+                AND b.`category`=#{category}
+            </if>
+            <if test="author!=null">
+                AND b.`author`=#{author}
+            </if>
+            <if test="status != null ">
+                AND b.`status`=#{status}
+            </if>
+        </where>
+        order  by  b.`id` asc
+    </select>
+</mapper>

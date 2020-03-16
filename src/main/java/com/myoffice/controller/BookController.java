@@ -3,14 +3,15 @@ package com.myoffice.controller;
 import com.github.pagehelper.PageInfo;
 import com.myoffice.common.utils.JsonCallBack;
 import com.myoffice.model.ActivityModel;
+import com.myoffice.model.BookModel;
 import com.myoffice.service.ActivityService;
+import com.myoffice.service.BookService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -19,36 +20,18 @@ import java.util.Map;
  * Created by user on 2018/1/8.
  */
 @Controller
-@RequestMapping("/activity")
-public class ActivityController {
+@RequestMapping("/book")
+public class BookController {
     @Autowired
-    private ActivityService activityService;
-    private Logger logger = LoggerFactory.getLogger(ActivityController.class);
-
-
-    /* @RequestMapping(value = "/insert", method = RequestMethod.POST)
-     @ResponseBody
-     public JsonCallBack insert(@RequestBody Student student) {
-         logger.info("insert called");
-         JsonCallBack jsonCallBack = new JsonCallBack(true);
-         try {
-             studentService.insert(student);
-         } catch (Exception e) {
-             jsonCallBack.setSuccess(false);
-             jsonCallBack.setMessage(e.getMessage());
-             logger.error(e.getMessage());
-             e.printStackTrace();
-         }
-         return jsonCallBack;
-     }
-  */
-    @RequestMapping(value = "/insertBatch", method = RequestMethod.POST)
+    private BookService bookService;
+    private Logger logger = LoggerFactory.getLogger(BookController.class);
+    @RequestMapping(value = "/insert", method = RequestMethod.POST)
     @ResponseBody
-    public JsonCallBack insertBatch(@RequestBody List<ActivityModel> activityModelList) {
+    public JsonCallBack insertBatch(@RequestBody  BookModel bookModel) {
         logger.info("insertBatch called");
         JsonCallBack jsonCallBack = new JsonCallBack(true);
         try {
-            activityService.insertBatch(activityModelList);
+            bookService.insert(bookModel);
         } catch (Exception e) {
             jsonCallBack.setSuccess(false);
             jsonCallBack.setMessage(e.getMessage());
@@ -61,11 +44,11 @@ public class ActivityController {
 
     @RequestMapping(value = "/delete", method = RequestMethod.POST)
     @ResponseBody
-    public JsonCallBack delete(@RequestBody ActivityModel activityModel) {
+    public JsonCallBack delete(@RequestBody BookModel  bookModel) {
         logger.info("delete called");
         JsonCallBack jsonCallBack = new JsonCallBack(true);
         try {
-            activityService.delete(activityModel);
+            bookService.delete(bookModel);
         } catch (Exception e) {
             jsonCallBack.setSuccess(false);
             jsonCallBack.setMessage(e.getMessage());
@@ -77,11 +60,11 @@ public class ActivityController {
 
     @RequestMapping(value = "/update", method = RequestMethod.POST)
     @ResponseBody
-    public JsonCallBack update(@RequestBody ActivityModel activityModel) {
+    public JsonCallBack update(@RequestBody BookModel  bookModel) {
         logger.info("findAllStudents called");
         JsonCallBack jsonCallBack = new JsonCallBack(true);
         try {
-            activityService.update(activityModel);
+            bookService.update(bookModel);
         } catch (Exception e) {
             jsonCallBack.setSuccess(false);
             jsonCallBack.setMessage(e.getMessage());
@@ -90,16 +73,15 @@ public class ActivityController {
         }
         return jsonCallBack;
     }
- /*
     @RequestMapping(value = "/getById", method = RequestMethod.POST)
     @ResponseBody
-    public JsonCallBack getById(@RequestBody Student student) {
+    public JsonCallBack getById(@RequestBody BookModel book){
         logger.info("getById called");
         JsonCallBack jsonCallBack = new JsonCallBack(true);
         Map<String, Object> pairs = jsonCallBack.getPairs();
         try {
-            student = studentService.getById(student);
-            pairs.put("dat", student);
+            book = bookService.getById(book);
+            pairs.put("dat", book);
         } catch (Exception e) {
             jsonCallBack.setSuccess(false);
             jsonCallBack.setMessage(e.getMessage());
@@ -108,35 +90,15 @@ public class ActivityController {
         }
         return jsonCallBack;
     }
-
-    @RequestMapping(value = "/findAll", method = RequestMethod.POST)
-    @ResponseBody
-    public JsonCallBack findAll(@RequestBody Student student) {
-        logger.info("findAllStudents called");
-        JsonCallBack jsonCallBack = new JsonCallBack(true);
-        Map<String, Object> pairs = jsonCallBack.getPairs();
-        try {
-            List<Student> studentList = studentService.findAll(student);
-            pairs.put("dat", studentList);
-        } catch (Exception e) {
-            jsonCallBack.setSuccess(false);
-            jsonCallBack.setMessage(e.getMessage());
-            logger.error(e.getMessage());
-            e.printStackTrace();
-        }
-        return jsonCallBack;
-    }
- */
-
     @RequestMapping(value = "/findPage/{pageNo}/{pageSize}", method = RequestMethod.POST)
     @ResponseBody
-    public JsonCallBack findPage(@RequestBody ActivityModel activityModel,
+    public JsonCallBack findPage(@RequestBody BookModel  bookModel,
                                  @PathVariable int pageNo, @PathVariable int pageSize) {
-        logger.info("findAllStudents called");
+        logger.info("findPage called");
         JsonCallBack jsonCallBack = new JsonCallBack(true);
         Map<String, Object> pairs = jsonCallBack.getPairs();
         try {
-            PageInfo<ActivityModel> pageInfo = activityService.findPage(activityModel, pageNo, pageSize);
+            PageInfo<BookModel> pageInfo = bookService.findPage(bookModel, pageNo, pageSize);
             pairs.put("data", pageInfo);
         } catch (Exception e) {
             jsonCallBack.setSuccess(false);

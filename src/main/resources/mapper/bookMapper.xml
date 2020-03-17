@@ -14,78 +14,78 @@
         <result column="note" property="note"/>
     </resultMap>
     <insert id="insert" parameterType="BookModel" useGeneratedKeys="true" keyProperty="id">
-         INSERT INTO book
-         <trim prefix="(" suffix=")" suffixOverrides=",">
-             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">
-                 name,
-             </if>
-             <if test="author!=null">
-                 author,
-             </if>
-             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(category)">
-                 category,
-             </if>
-             <if test="page!=null">
-                 page,
-             </if>
-             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(staus)">
-                 status,
-             </if>
-             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(note)">
-                 note,
-             </if>
-         </trim>
-         VALUES
-         <trim prefix="(" suffix=")" suffixOverrides=",">
-             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">
-                 #{name},
-             </if>
-             <if test="author!=null">
-                 #{author},
-             </if>
-             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(category)">
-                 #{category},
-             </if>
-             <if test="page!=null">
-                 #{page},
-             </if>
-             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(staus)">
-                 #{status},
-             </if>
-             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(note)">
-                 #{note},
-             </if>
-         </trim>
-     </insert>
+        INSERT INTO book
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">
+                name,
+            </if>
+            <if test="author!=null">
+                author,
+            </if>
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(category)">
+                category,
+            </if>
+            <if test="page!=null">
+                page,
+            </if>
+            <if test="status!=null">
+                status,
+            </if>
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(note)">
+                note,
+            </if>
+        </trim>
+        VALUES
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">
+                #{name},
+            </if>
+            <if test="author!=null">
+                #{author},
+            </if>
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(category)">
+                #{category},
+            </if>
+            <if test="page!=null">
+                #{page},
+            </if>
+            <if test="status!=null">
+                #{status},
+            </if>
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(note)">
+                #{note},
+            </if>
+        </trim>
+    </insert>
     <delete id="delete" parameterType="BookModel">
-        DELETE FROM  book
+        DELETE FROM book
         <where>
             id=#{id}
         </where>
     </delete>
     <update id="update" parameterType="BookModel">
-    UPDATE book
-    <set>
-    <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">
-    name=#{name},
-    </if>
-    <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(author)">
-    author=#{author},
-    </if>
-    <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(category)">
-    category=#{catetory},
-    </if>
-   <if test="page!=null">
-    page=#{page},
-    </if>
-        <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(status)">
-            status=#{status},
-        </if>
-    <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(note)">
-    note=#{note}
-    </if>
-    </set>
-    WHERE id=#{id}
+        UPDATE book
+        <set>
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">
+                name=#{name},
+            </if>
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(author)">
+                author=#{author},
+            </if>
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(category)">
+                category=#{category},
+            </if>
+            <if test="page!=null">
+                page=#{page},
+            </if>
+            <if test="status!=null">
+                status=#{status},
+            </if>
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(note)">
+                note=#{note}
+            </if>
+        </set>
+        WHERE id=#{id}
     </update>
     <select id="getById" parameterType="BookModel" resultType="BookModel">
         SELECT
@@ -98,24 +98,24 @@
     </select>
 
     <!--<select id="findAll" parameterType="Student" resultMap="studentModelRM">-->
-        <!--select-->
-        <!--s.*-->
-        <!--from-->
-        <!--student s-->
-        <!--<where>-->
-            <!--<if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">-->
-                <!--AND m.`name` like CONCAT('%',"\\" #{name},'%' )-->
-            <!--</if>-->
-            <!--<if test="gender != null">-->
-                <!--AND s.`gender`=#{gender}-->
-            <!--</if>-->
-            <!--<if test="age != null">-->
-                <!--AND s.`age`=#{age}-->
-            <!--</if>-->
-            <!--<if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(address)">-->
-                <!--AND m.`address` like CONCAT('%',"\\" #{address},'%' )-->
-            <!--</if>-->
-        <!--</where>-->
+    <!--select-->
+    <!--s.*-->
+    <!--from-->
+    <!--student s-->
+    <!--<where>-->
+    <!--<if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">-->
+    <!--AND m.`name` like CONCAT('%',"\\" #{name},'%' )-->
+    <!--</if>-->
+    <!--<if test="gender != null">-->
+    <!--AND s.`gender`=#{gender}-->
+    <!--</if>-->
+    <!--<if test="age != null">-->
+    <!--AND s.`age`=#{age}-->
+    <!--</if>-->
+    <!--<if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(address)">-->
+    <!--AND m.`address` like CONCAT('%',"\\" #{address},'%' )-->
+    <!--</if>-->
+    <!--</where>-->
     <!--</select>-->
     <!--&lt;!&ndash;id 固定的 findPaging parameterType 固定的 pageModel params.entity固定写法&ndash;&gt;-->
     <select id="findPage" parameterType="bookModel" resultMap="bookModelRM">
@@ -137,6 +137,6 @@
                 AND b.`status`=#{status}
             </if>
         </where>
-        order  by  b.`id` asc
+        order by b.`id` asc
     </select>
 </mapper>

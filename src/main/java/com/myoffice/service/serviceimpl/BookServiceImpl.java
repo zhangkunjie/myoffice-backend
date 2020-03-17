@@ -21,7 +21,8 @@ public class BookServiceImpl implements  BookService {
 
 
     @Override
-    public void insert(BookModel activityModel) {
+    public void insert(BookModel bookModel) {
+        bookDao.insert(bookModel);
     }
 
     @Override
@@ -35,8 +36,8 @@ public class BookServiceImpl implements  BookService {
     }
 
     @Override
-    public BookModel getById(BookModel activityModel) {
-        return null;
+    public BookModel getById(BookModel bookModel) {
+     return  bookDao.getById(bookModel);
     }
 
     @Override

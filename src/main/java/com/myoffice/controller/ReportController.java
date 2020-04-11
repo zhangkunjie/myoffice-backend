@@ -1,8 +1,6 @@
 package com.myoffice.controller;
 
 import com.myoffice.common.utils.JsonCallBack;
-import com.myoffice.model.PriorityModel;
-import com.myoffice.service.PriorityService;
 import com.myoffice.service.ReportService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

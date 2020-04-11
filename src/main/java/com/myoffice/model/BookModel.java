@@ -7,9 +7,10 @@ import java.io.Serializable;
  */
 public class BookModel  implements Serializable {
    private  Integer     id;
+   private  String      isbn;
    private  String      name;
    private  String      author;
-   private  String      category;
+   private  Integer     category;
    private  Integer     page;
    private  String      note;
    private  Integer     status;
@@ -20,6 +21,14 @@ public class BookModel  implements Serializable {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getIsbn() {
+        return isbn;
+    }
+
+    public void setIsbn(String isbn) {
+        this.isbn = isbn;
     }
 
     public String getName() {
@@ -38,11 +47,11 @@ public class BookModel  implements Serializable {
         this.author = author;
     }
 
-    public String getCategory() {
+    public Integer getCategory() {
         return category;
     }
 
-    public void setCategory(String category) {
+    public void setCategory(Integer category) {
         this.category = category;
     }
 
@@ -69,13 +78,15 @@ public class BookModel  implements Serializable {
     public void setStatus(Integer status) {
         this.status = status;
     }
+
     @Override
     public String toString() {
         return "BookModel{" +
                 "id=" + id +
+                ", isbn='" + isbn + '\'' +
                 ", name='" + name + '\'' +
                 ", author='" + author + '\'' +
-                ", category='" + category + '\'' +
+                ", category=" + category +
                 ", page=" + page +
                 ", note='" + note + '\'' +
                 ", status=" + status +

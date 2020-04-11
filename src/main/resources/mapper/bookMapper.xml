@@ -4,6 +4,7 @@
     <!--配置一个resultMap 指定返回的类型 -->
     <resultMap id="bookModelRM" type="BookModel">
         <id column="id" property="id"/>
+        <result column="isbn" property="isbn"/>
         <result column="name" property="name"/>
         <result column="author" property="author"/>
         <result column="category" property="category"/>
@@ -16,13 +17,16 @@
     <insert id="insert" parameterType="BookModel" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO book
         <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(isbn)">
+                isbn,
+            </if>
             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">
                 name,
             </if>
-            <if test="author!=null">
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(author)">
                 author,
             </if>
-            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(category)">
+            <if test="category!=null">
                 category,
             </if>
             <if test="page!=null">
@@ -37,13 +41,16 @@
         </trim>
         VALUES
         <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(isbn)">
+                #{isbn},
+            </if>
             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">
                 #{name},
             </if>
-            <if test="author!=null">
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(author)">
                 #{author},
             </if>
-            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(category)">
+            <if test="category!=null">
                 #{category},
             </if>
             <if test="page!=null">
@@ -66,13 +73,16 @@
     <update id="update" parameterType="BookModel">
         UPDATE book
         <set>
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(isbn)">
+                name=#{isbn},
+            </if>
             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">
                 name=#{name},
             </if>
             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(author)">
                 author=#{author},
             </if>
-            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(category)">
+            <if test="category!=null">
                 category=#{category},
             </if>
             <if test="page!=null">
@@ -124,14 +134,17 @@
         from
         book b
         <where>
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(isbn)">
+                AND b.`isbn` like CONCAT('%',"\\" #{isbn},'%' )
+            </if>
             <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(name)">
                 AND b.`name` like CONCAT('%',"\\" #{name},'%' )
             </if>
             <if test="category != null ">
                 AND b.`category`=#{category}
             </if>
-            <if test="author!=null">
-                AND b.`author`=#{author}
+            <if test="@org.apache.commons.lang3.StringUtils@isNotEmpty(author)">
+                AND b.`author`  like CONCAT('%',"\\" #{author},'%' )
             </if>
             <if test="status != null ">
                 AND b.`status`=#{status}

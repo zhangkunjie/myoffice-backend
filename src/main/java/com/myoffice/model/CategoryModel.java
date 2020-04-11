@@ -5,9 +5,10 @@ import java.math.BigInteger;
 
 public class CategoryModel implements Serializable {
     private BigInteger id;
-    private Short code;
-    private String name;
-    private Integer status;
+    private Integer   categoryId;
+    private Integer   code;
+    private String    name;
+    private Integer   status;
 
     public BigInteger getId() {
         return id;
@@ -17,11 +18,19 @@ public class CategoryModel implements Serializable {
         this.id = id;
     }
 
-    public Short getCode() {
+    public Integer getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(Integer categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    public Integer getCode() {
         return code;
     }
 
-    public void setCode(Short code) {
+    public void setCode(Integer code) {
         this.code = code;
     }
 
@@ -45,6 +54,7 @@ public class CategoryModel implements Serializable {
     public String toString() {
         return "CategoryModel{" +
                 "id=" + id +
+                ", categoryId=" + categoryId +
                 ", code=" + code +
                 ", name='" + name + '\'' +
                 ", status=" + status +

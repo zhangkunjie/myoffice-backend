@@ -1,22 +1,24 @@
 /*
-Navicat MySQL Data Transfer
+ Navicat Premium Data Transfer
 
-Source Server         : localhost
-Source Server Version : 50642
-Source Host           : localhost:3306
-Source Database       : myoffice
+ Source Server         : localhost
+ Source Server Type    : MySQL
+ Source Server Version : 50726
+ Source Host           : localhost
+ Source Database       : myoffice
 
-Target Server Type    : MYSQL
-Target Server Version : 50642
-File Encoding         : 65001
+ Target Server Type    : MySQL
+ Target Server Version : 50726
+ File Encoding         : utf-8
 
-Date: 2019-01-22 14:46:12
+ Date: 04/13/2020 11:12:53 AM
 */
 
-SET FOREIGN_KEY_CHECKS=0;
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
 
 -- ----------------------------
--- Table structure for `activity`
+--  Table structure for `activity`
 -- ----------------------------
 DROP TABLE IF EXISTS `activity`;
 CREATE TABLE `activity` (
@@ -32,83 +34,63 @@ CREATE TABLE `activity` (
   `status` bit(1) DEFAULT NULL COMMENT '活动状态',
   `_timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '操作时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of activity
+--  Records of `activity`
 -- ----------------------------
-INSERT INTO `activity` VALUES ('1', 'bbbbbb', '1', '1', '2019-01-08', '10:00:00', '11:00:00', '0.34', 'aabbbbbbbbbbbbbbbbbbbbbbb', '', '2019-01-22 14:30:16');
-INSERT INTO `activity` VALUES ('2', 'myoffice前端', '1', '1', '2019-01-01', '16:56:19', '16:56:22', '0.86', '备注', '', '2019-01-17 15:09:54');
-INSERT INTO `activity` VALUES ('3', 'myoffice后端设计', '2', '1', '2019-01-01', '16:56:19', '16:56:22', '0.86', '备注', '', '2019-01-17 15:09:54');
-INSERT INTO `activity` VALUES ('4', 'myoffice后端设计', '1', '1', '2019-01-01', '16:56:19', '16:56:22', '0.81', '备注', '', '2019-01-17 15:09:54');
-INSERT INTO `activity` VALUES ('5', 'myoffice后端设计', '3', '2', '2019-01-01', '16:56:19', '16:56:22', '0.81', '备注', '', '2019-01-17 15:09:54');
-INSERT INTO `activity` VALUES ('6', 'myoffice后端设计', '1', '1', '2019-01-02', '16:56:19', '16:56:22', '0.66', '备注', '', '2019-01-17 15:10:08');
-INSERT INTO `activity` VALUES ('7', 'myoffice后端设计', '1', '2', '2019-01-02', '16:56:19', '16:56:22', '0.86', '备注', '', '2019-01-17 15:10:08');
-INSERT INTO `activity` VALUES ('8', 'myoffice后端设计', '1', '1', '2019-01-02', '16:56:19', '16:56:00', '0.66', '备注', '', '2019-01-22 13:37:46');
-INSERT INTO `activity` VALUES ('9', 'myoffice后端设计', '2', '1', '2019-01-02', '16:56:19', '16:56:22', '0.56', '备注', '', '2019-01-17 15:10:08');
-INSERT INTO `activity` VALUES ('10', 'myoffice后端设计', '2', '2', '2019-01-02', '16:56:19', '16:56:22', '0.98', '备注', '', '2019-01-17 15:10:08');
-INSERT INTO `activity` VALUES ('11', 'myoffice后端设计', '1', '1', '2019-01-03', '16:56:19', '16:56:22', '1', '备注', '', '2019-01-17 15:10:16');
-INSERT INTO `activity` VALUES ('12', 'myoffice后端设计', '2', '4', '2019-01-03', '16:56:00', '16:56:00', '0.86', '备注', '', '2019-01-22 14:14:26');
-INSERT INTO `activity` VALUES ('13', 'myoffice后端设计', '4', '3', '2019-01-04', '16:56:19', '16:56:22', '0.86', '备注', '', '2019-01-17 15:10:24');
-INSERT INTO `activity` VALUES ('14', 'myoffice后端设计', '1', '1', '2019-01-04', '16:56:19', '16:56:22', '1', '备注', '', '2019-01-17 15:10:24');
-INSERT INTO `activity` VALUES ('15', 'myoffice后端设计', '2', '3', '2019-01-04', '16:56:19', '16:56:22', '0.86', '备注', '', '2019-01-17 15:10:24');
-INSERT INTO `activity` VALUES ('16', 'myoffice后端设计', '2', '3', '2019-01-05', '16:56:19', '16:56:22', '0.45', '备注', '', '2019-01-17 15:10:36');
-INSERT INTO `activity` VALUES ('17', 'myoffice后端设计', '3', '3', '2019-01-05', '16:56:19', '16:56:22', '0.23', '备注', '', '2019-01-17 15:10:36');
-INSERT INTO `activity` VALUES ('18', 'myoffice后端设计', '3', '1', '2019-01-05', '16:56:19', '16:56:22', '0.86', '备注', '', '2019-01-17 15:10:36');
-INSERT INTO `activity` VALUES ('19', 'myoffice后端设计', '3', '4', '2019-01-05', '16:56:19', '16:56:22', '0.86', '备注', '', '2019-01-17 15:10:36');
-INSERT INTO `activity` VALUES ('20', 'myoffice后端设计', '3', '4', '2019-01-05', '16:56:19', '16:56:22', '0.86', '备注', '', '2019-01-17 15:10:36');
-INSERT INTO `activity` VALUES ('21', 'myoffice后端设计', '1', '4', '2019-01-05', '16:56:19', '16:56:22', '0.86', '备注', '', '2019-01-17 15:10:36');
-INSERT INTO `activity` VALUES ('22', 'aaadasdasdsdsdasdasdasdasdsd', '1', '1', '2019-01-23', '13:58:00', '13:57:00', '0', null, '', '2019-01-22 13:57:13');
-INSERT INTO `activity` VALUES ('23', 'zzzzz', '1', '1', '2019-01-23', '14:30:00', '14:30:00', '0', null, '', '2019-01-22 14:31:03');
-INSERT INTO `activity` VALUES ('24', 'bbbbbbb', '2', '2', '2019-01-21', '14:30:00', '14:30:00', '0', null, '', '2019-01-22 14:31:03');
+BEGIN;
+INSERT INTO `activity` VALUES ('1', 'bbbbbb', '1', '1', '2019-01-08', '10:00:00', '11:00:00', '0.34', 'aabbbbbbbbbbbbbbbbbbbbbbb', b'0', '2019-01-22 14:30:16'), ('2', 'myoffice前端', '1', '1', '2019-01-01', '16:56:19', '16:56:22', '0.86', '备注', b'0', '2019-01-17 15:09:54'), ('3', 'myoffice后端设计', '2', '1', '2019-01-01', '16:56:19', '16:56:22', '0.86', '备注', b'0', '2019-01-17 15:09:54'), ('4', 'myoffice后端设计', '1', '1', '2019-01-01', '16:56:19', '16:56:22', '0.81', '备注', b'0', '2019-01-17 15:09:54'), ('5', 'myoffice后端设计', '3', '2', '2019-01-01', '16:56:19', '16:56:22', '0.81', '备注', b'0', '2019-01-17 15:09:54'), ('6', 'myoffice后端设计', '1', '1', '2019-01-02', '16:56:19', '16:56:22', '0.66', '备注', b'0', '2019-01-17 15:10:08'), ('7', 'myoffice后端设计', '1', '2', '2019-01-02', '16:56:19', '16:56:22', '0.86', '备注', b'0', '2019-01-17 15:10:08'), ('8', 'myoffice后端设计', '1', '1', '2019-01-02', '16:56:19', '16:56:00', '0.66', '备注', b'0', '2019-01-22 13:37:46'), ('9', 'myoffice后端设计', '2', '1', '2019-01-02', '16:56:19', '16:56:22', '0.56', '备注', b'0', '2019-01-17 15:10:08'), ('10', 'myoffice后端设计', '2', '2', '2019-01-02', '16:56:19', '16:56:22', '0.98', '备注', b'0', '2019-01-17 15:10:08'), ('11', 'myoffice后端设计', '1', '1', '2019-01-03', '16:56:19', '16:56:22', '1', '备注', b'0', '2019-01-17 15:10:16'), ('12', 'myoffice后端设计', '2', '4', '2019-01-03', '16:56:00', '16:56:00', '0.86', '备注', b'0', '2019-01-22 14:14:26'), ('13', 'myoffice后端设计', '4', '3', '2019-01-04', '16:56:19', '16:56:22', '0.86', '备注', b'0', '2019-01-17 15:10:24'), ('14', 'myoffice后端设计', '1', '1', '2019-01-04', '16:56:19', '16:56:22', '1', '备注', b'0', '2019-01-17 15:10:24'), ('15', 'myoffice后端设计', '2', '3', '2019-01-04', '16:56:19', '16:56:22', '0.86', '备注', b'0', '2019-01-17 15:10:24'), ('16', 'myoffice后端设计', '2', '3', '2019-01-05', '16:56:19', '16:56:22', '0.45', '备注', b'0', '2019-01-17 15:10:36'), ('18', 'myoffice后端设计', '3', '1', '2019-01-05', '16:56:19', '16:56:22', '0.86', '备注', b'0', '2019-01-17 15:10:36'), ('19', 'myoffice后端设计', '3', '4', '2019-01-05', '16:56:19', '16:56:22', '0.86', '备注', b'0', '2019-01-17 15:10:36'), ('20', 'myoffice后端设计', '3', '4', '2019-01-05', '16:56:19', '16:56:22', '0.86', '备注', b'0', '2019-01-17 15:10:36'), ('21', 'myoffice后端设计', '1', '4', '2019-01-05', '16:56:19', '16:56:22', '0.86', '备注', b'0', '2019-01-17 15:10:36'), ('22', 'aaadasdasdsdsdasdasdasdasdsd', '1', '1', '2019-01-23', '13:58:00', '13:57:00', '0', null, b'0', '2019-01-22 13:57:13'), ('23', 'zzzzz', '1', '1', '2019-01-23', '14:30:00', '14:30:00', '0', null, b'0', '2019-01-22 14:31:03'), ('24', 'bbbbbbb', '2', '2', '2019-01-21', '14:30:00', '14:30:00', '0', null, b'0', '2019-01-22 14:31:03');
+COMMIT;
 
 -- ----------------------------
--- Table structure for `category`
+--  Table structure for `book`
+-- ----------------------------
+DROP TABLE IF EXISTS `book`;
+CREATE TABLE `book` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `isbn` varchar(50) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `author` varchar(100) DEFAULT NULL,
+  `category` int(50) NOT NULL,
+  `page` int(11) DEFAULT NULL,
+  `status` int(11) DEFAULT NULL,
+  `note` text,
+  `_timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`,`category`)
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+--  Records of `book`
+-- ----------------------------
+BEGIN;
+INSERT INTO `book` VALUES ('1', '90123551234', '毛泽东传1', '张三1', '2', '3000', '1', '本书不错1111', '2020-04-13 10:36:51'), ('2', '9023234', '经济学基础', '李四', '2', '200', '0', '垃圾', '2020-04-08 11:59:10'), ('3', '3224', '我的前半生', '溥仪', '3', '400', '1', null, '2020-04-08 11:59:13'), ('4', '5154566', '美食家', '堂堂', '4', '200', '1', null, '2020-04-08 11:59:15'), ('5', '24324', '小时代1', '郭敬明1', '5', '250', '0', 'aaa', '2020-04-08 11:59:17'), ('6', '6637721', '大变局', '毛三', '6', '300', '1', null, '2020-04-08 11:59:20'), ('7', '732623', '计算机科学', '王璇', '7', '200', '0', null, '2020-04-08 11:59:22'), ('8', '6326263', '万历十五年', '王子站', '7', '320', '0', null, '2020-04-08 11:59:23'), ('9', '21612673', '平凡的世界', '路遥', '3', '430', '0', null, '2020-04-08 11:59:26'), ('10', '6267', '在远方', '富兰克林', '3', '320', '1', null, '2020-04-08 11:59:33'), ('11', '425323425', '植物学', '陶晶晶', '5', '240', '0', null, '2020-04-08 11:59:35'), ('12', '2626', '动物饲养基础', '李楠', '6', '240', '0', null, '2020-04-08 11:59:37'), ('13', '344234', '红与黑', 'Tom', '2', '250', '1', null, '2020-04-08 12:07:11'), ('14', '6263', '傲慢与偏见', 'Jack', '5', '300', '0', null, '2020-04-08 11:59:39'), ('15', '62626', '股票投资入门', '爱德华', '6', '400', '2', null, '2020-04-08 11:59:41'), ('16', '1', '股票投资回忆录1', '特朗普1', '1', '250', '0', '11111', '2020-04-13 11:00:57');
+COMMIT;
+
+-- ----------------------------
+--  Table structure for `category`
 -- ----------------------------
 DROP TABLE IF EXISTS `category`;
 CREATE TABLE `category` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '活动类别主键',
+  `category_id` int(11) DEFAULT NULL COMMENT '业务类别',
   `name` varchar(100) DEFAULT NULL COMMENT '活动类别名称',
-  `code` tinyint(4) DEFAULT NULL COMMENT '活动类别编码',
+  `code` int(4) DEFAULT NULL COMMENT '活动类别编码',
   `status` smallint(6) DEFAULT NULL,
+  `remark` varchar(100) DEFAULT NULL COMMENT '备注',
   `_timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '时间戳',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=83 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of category
+--  Records of `category`
 -- ----------------------------
-INSERT INTO `category` VALUES ('1', '工作', '1', '0', '2019-01-18 11:19:32');
-INSERT INTO `category` VALUES ('2', '学习', '2', '0', '2019-01-18 11:19:33');
-INSERT INTO `category` VALUES ('3', '文化', '3', '0', '2019-01-18 11:19:36');
-INSERT INTO `category` VALUES ('4', '恋爱', '4', '0', '2019-01-18 11:19:37');
-INSERT INTO `category` VALUES ('5', '运动', '5', '0', '2019-01-18 11:19:39');
-INSERT INTO `category` VALUES ('6', '其他', '6', '0', '2019-01-18 11:19:40');
+BEGIN;
+INSERT INTO `category` VALUES ('1', '1', '工作', '1', '0', null, '2020-04-03 11:09:05'), ('2', '1', '学习', '2', '0', null, '2020-04-03 11:09:06'), ('3', '1', '文化', '3', '0', null, '2020-04-03 11:09:07'), ('4', '1', '恋爱', '4', '0', null, '2020-04-03 11:09:07'), ('5', '1', '运动', '5', '0', null, '2020-04-03 11:09:08'), ('50', '1', '其他', '50', '0', null, '2020-04-03 11:42:21'), ('51', '2', '马列主义毛邓', '1', '0', null, '2020-04-07 17:18:38'), ('52', '2', '哲学宗教', '2', '0', null, '2020-04-03 17:56:39'), ('53', '2', '社会科学总论', '3', '0', null, '2020-04-03 17:56:57'), ('54', '2', '政治法律', '4', '0', null, '2020-04-03 17:57:12'), ('55', '2', '军事', '5', '0', null, '2020-04-03 17:57:26'), ('56', '2', '经济', '6', '0', null, '2020-04-03 17:57:36'), ('57', '2', '文化科学教育体育', '7', '0', null, '2020-04-03 17:57:56'), ('58', '2', '语言文字', '8', '0', null, '2020-04-03 17:58:27'), ('59', '2', '文学', '9', '0', null, '2020-04-03 17:58:32'), ('60', '2', '艺术', '10', '0', null, '2020-04-03 17:58:51'), ('61', '2', '历史地理', '11', '0', null, '2020-04-03 17:59:02'), ('62', '2', '自然科学总论', '12', '0', null, '2020-04-03 17:59:20'), ('63', '2', '树理科学和化学', '13', '0', null, '2020-04-03 17:59:53'), ('64', '2', '天文学地球科学', '14', '0', null, '2020-04-03 18:00:15'), ('65', '2', '生物科学', '15', '0', null, '2020-04-03 18:00:27'), ('66', '2', '医药卫生', '16', '0', null, '2020-04-03 18:24:49'), ('67', '2', '农业科学', '17', '0', null, '2020-04-03 18:25:02'), ('68', '2', '工业技术', '18', '0', null, '2020-04-03 18:25:19'), ('69', '2', '交通运输', '19', '0', null, '2020-04-03 18:25:31'), ('70', '2', '航空航天', '20', '0', null, '2020-04-03 18:26:12'), ('71', '2', '综合性图书', '21', '0', null, '2020-04-03 18:26:27'), ('80', '3', '未读', '0', '0', null, '2020-04-03 23:22:02'), ('81', '3', '在读', '1', null, null, '2020-04-07 11:11:36'), ('82', '3', '已读', '2', null, null, '2020-04-08 12:09:04');
+COMMIT;
 
 -- ----------------------------
--- Table structure for `priority`
--- ----------------------------
-DROP TABLE IF EXISTS `priority`;
-CREATE TABLE `priority` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '活动优先级主键',
-  `code` tinyint(6) DEFAULT NULL COMMENT '活动类别编码',
-  `name` varchar(100) DEFAULT NULL COMMENT '活动类别名称',
-  `status` bit(1) DEFAULT NULL COMMENT '活动类别状态',
-  `remark` varchar(200) DEFAULT NULL,
-  `_timestamp` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '时间戳',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
-
--- ----------------------------
--- Records of priority
--- ----------------------------
-INSERT INTO `priority` VALUES ('1', '1', '重要紧急', '', '', '2019-01-10 17:07:33');
-INSERT INTO `priority` VALUES ('2', '2', '重要不紧急', '', '', '2019-01-10 17:07:32');
-INSERT INTO `priority` VALUES ('3', '3', '不重要紧急', '', null, '2019-01-10 17:07:30');
-INSERT INTO `priority` VALUES ('4', '4', '不重要不紧急', '', null, '2019-01-10 17:07:45');
-
--- ----------------------------
--- Table structure for `status`
+--  Table structure for `status`
 -- ----------------------------
 DROP TABLE IF EXISTS `status`;
 CREATE TABLE `status` (
@@ -120,7 +102,10 @@ CREATE TABLE `status` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Records of status
+--  Records of `status`
 -- ----------------------------
-INSERT INTO `status` VALUES ('1', '正常', '0', '2019-01-10 17:04:33');
-INSERT INTO `status` VALUES ('2', '删除', '1', '2019-01-10 17:04:37');
+BEGIN;
+INSERT INTO `status` VALUES ('1', '正常', '0', '2019-01-10 17:04:33'), ('2', '删除', '1', '2019-01-10 17:04:37');
+COMMIT;
+
+SET FOREIGN_KEY_CHECKS = 1;

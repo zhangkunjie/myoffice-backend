@@ -10,7 +10,7 @@
 
     <!-- 初始化框架的版本号 -->
     <properties>
-        <spring.version>4.3.3.RELEASE</spring.version>
+        <spring.version>5.2.20.RELEASE</spring.version>
         <dubbo.version>2.6.1</dubbo.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
